@@ -1,0 +1,53 @@
+### Request 1: Create a book
+### Response
+### Status Code: 201
+### Body: JSON for creating a book
+POST http://localhost:3000/books HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Book Title",
+    "author": "James Reed",
+    "date": "2024-08-11",
+    "note": "This book was fun.",
+    "mark": true
+}
+
+### Request 2: Edit a book
+### Response
+### Status Code: 201
+### Body: JSON replace
+POST http://localhost:3000/books HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Book Title",
+    "author": "James Reed",
+    "date": "",
+    "note": "",
+    "mark": false
+}
+
+### Request 3: Create a book
+### Response
+### Status Code: 201
+### Body: JSON for creating a 2nd book
+POST http://localhost:3000/books HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Apple",
+    "author": "",
+    "date": "",
+    "note": "",
+    "mark": true
+}
+
+### Request 4: Sort books
+### Response
+### Status Code: 201
+### Body: JSON for sorting books
+POST http://localhost:3000/books HTTP/1.1
+content-type: application/json
+
+sortByTitle(books)
